@@ -1,10 +1,3 @@
-# CSS Grid
+# Belajar CSS GRID
 
-## Daftar Isi
-
-- Apa Itu CSS Grid
-- Special Keyword and Function
-- Columns dan Rows
-- Grid Area dan Grid Gap
-- Grid Alignment
-- Responsive Website Project
+Repository ini berisi file-file latihan saya selama saya belajar tentang CSS GRID
