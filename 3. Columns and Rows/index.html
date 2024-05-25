@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid : Column and Rows</title>
+    <style>
+      .container {
+        width: 70%;
+        margin: 50px auto;
+        display: grid;
+        /* 
+        
+        grid-template-columns: column1 column2 ... ;
+        grid-template-rows: row1 row2 ... ;
+        grid-auto-columns: ukuran_column -> mengatur ukuran column yang implisit
+        grid-auto-rows: ukuran_row -> mengatur ukuran row yang implisit
+        grid-auto-flow: row | column -> jika tidak muat akan dijadikan column atau row baru
+
+        */
+        grid-template-columns: 1fr 3fr 1.5fr;
+        grid-template-rows: 50px 100px;
+        grid-auto-rows: 50px;
+      }
+      .item-ganjil {
+        background-color: skyblue;
+      }
+      .item-genap {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item-ganjil">1</div>
+      <div class="item-genap">2</div>
+      <div class="item-ganjil">3</div>
+      <div class="item-genap">4</div>
+      <div class="item-ganjil">5</div>
+      <div class="item-genap">6</div>
+      <div class="item-ganjil">7</div>
+      <div class="item-genap">8</div>
+      <div class="item-ganjil">9</div>
+    </div>
+    </div>
+  </body>
+</html>

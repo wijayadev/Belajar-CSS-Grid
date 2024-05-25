@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid : Column and Rows</title>
+    <style>
+      /* .container {
+        width: 70%;
+        display: grid;
+        grid-template-columns: 1fr 3fr 1.5fr;
+        grid-template-rows: 50px 100px;
+        grid-auto-rows: 50px;
+      }
+      .item-ganjil {
+        background-color: skyblue;
+        text-align: center;
+        line-height: 50px;
+      }
+      .item-genap {
+        background-color: pink;
+      } */
+
+      .container {
+        width: 800px;
+        border: 3px solid #333;
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        padding: 3px;
+        margin: 50px auto;
+        font-weight: bold;
+      }
+      .header {
+        height: 100px;
+        background-color: purple;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .content {
+        display: flex;
+      }
+      .sidebar {
+        flex: 1;
+      }
+      .aside {
+        height: 125px;
+        background-color: blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .nav {
+        height: 200px;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      main {
+        flex: 2;
+        height: 325px;
+        background-color: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .footer {
+        height: 50px;
+        background-color: rgb(65, 64, 64);
+        line-height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">HEADER</div>
+      <div class="content">
+        <div class="sidebar">
+          <div class="aside">ASIDE</div>
+          <div class="nav">NAV</div>
+        </div>
+        <main class="main">MAIN</main>
+      </div>
+      <div class="footer cf">FOOTER</div>
+    </div>
+  </body>
+</html>

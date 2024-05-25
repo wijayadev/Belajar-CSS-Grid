@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: 10px;
+}
+
+body {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+nav {
+  background-color: green;
+  height: 3rem;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.showcase {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  display: grid;
+  grid-template-areas:
+    "hero hero"
+    "card-1 card-1"
+    "card-2 card-2";
+  grid-template-columns: 1fr;
+  grid-template-rows: 400px 200px 200px;
+  gap: 10px;
+}
+.hero {
+  background-color: orange;
+  grid-area: hero;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-1 {
+  background-color: blue;
+  grid-area: card-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-2 {
+  background-color: blueviolet;
+  grid-area: card-2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-box {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-rows: repeat(5, minmax(150px, 1fr));
+  gap: 10px;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.card {
+  background-color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 576px) {
+  .showcase {
+    grid-template-areas:
+      "hero hero"
+      "card-1 card-2";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20rem 10rem;
+  }
+  nav {
+    font-size: 26px;
+  }
+  body {
+    font-size: 26px;
+  }
+  .card-box {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .showcase {
+    grid-template-areas:
+      "hero card-1"
+      "hero card-2";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 16rem 16rem;
+  }
+  nav {
+    font-size: 30px;
+  }
+  body {
+    font-size: 30px;
+  }
+}

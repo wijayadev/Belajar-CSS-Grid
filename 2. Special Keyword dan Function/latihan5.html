@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #eaeaea;
+        margin: 20px;
+      }
+      h2 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .gallery {
+        width: 90%;
+        margin: 20px auto;
+        border: 10px solid white;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 5px;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Image Gallery</h2>
+    <ul class="gallery">
+      <li><img src="https://source.unsplash.com/600x400?laptop" alt="" /></li>
+      <li><img src="https://source.unsplash.com/600x400?computer" alt="" /></li>
+      <li><img src="https://source.unsplash.com/600x400?sunset" alt="" /></li>
+      <li>
+        <img src="https://source.unsplash.com/600x400?programming" alt="" />
+      </li>
+      <li><img src="https://source.unsplash.com/600x400?time" alt="" /></li>
+      <li><img src="https://source.unsplash.com/600x400?coffee" alt="" /></li>
+      <li><img src="https://source.unsplash.com/600x400?book" alt="" /></li>
+      <li><img src="https://source.unsplash.com/600x400?library" alt="" /></li>
+      <li>
+        <img src="https://source.unsplash.com/600x400?student" alt="" />
+      </li>
+      <li>
+        <img src="https://source.unsplash.com/600x400?bussiness" alt="" />
+      </li>
+    </ul>
+  </body>
+</html>
+
+<!-- 
+Ini adalah latihan membuat image gallery responsive dari apa yang telah dipelajari sebelumnya tentang CSS Grid
+ -->
